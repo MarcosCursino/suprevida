@@ -1,4 +1,6 @@
 import * as S from './styles';
+import { BsFillQuestionCircleFill } from "react-icons/bs";
+import { FaFacebook, FaInstagram, FaTwitter, FaWhatsapp } from 'react-icons/fa';
 
 export default function Footer() {
   return (
@@ -18,26 +20,21 @@ export default function Footer() {
         <div className="contato">
           <section>
             <button type="button">
-              {/* <img src={Email} alt="Email" /> */}
+              <img src="img/email.png" alt="Email" />
                ENTRE EM CONTATO
             </button>
             <button type="button">
-              {/* <img src={Audio} alt="Audio" /> */}
+              <BsFillQuestionCircleFill />
                PERGUNTAS FREQUENTES
             </button>
           </section>
         </div>
 
-        <div className="patriocinio">
-          <div className="content_patriocinio">
-            <p>Created by</p>
-            {/* <img src={LogoWhite} alt="Logo" /> */}
-          </div>
-
-          <div className="content_patriocinio">
-            <p>Powered by</p>
-            {/* <img src={Vtex} alt="Vtex" /> */}
-          </div>
+        <div className="share">
+          <FaFacebook />
+          <FaInstagram />
+          <FaTwitter />
+          <FaWhatsapp />
         </div>
       </S.Content>
     </S.Container>

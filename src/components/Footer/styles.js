@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background: #000;
+  background: #006A6A;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -34,14 +34,17 @@ export const Content = styled.div`
       margin-left: 0;
     }
     .patriocinio {
+      background-color: #FFF;
       justify-content: space-around;
       align-items: center;
       width: 100%;
-      .content_patriocinio {
-        margin: 0 0 30px 0 !important;
+
+      svg {
+        margin-right: 50px !important;
       }
     }
   }
+
   .localizacao {
     display: flex;
     flex-direction: column;
@@ -72,7 +75,7 @@ export const Content = styled.div`
         border: none;
         border-radius: 5px;
         height: 40px;
-        width: 195px;
+        width: 205px;
         align-items: center;
         background: #FFF;
         font-size: 12px;
@@ -82,6 +85,20 @@ export const Content = styled.div`
         color: #000;
         display: flex;
         justify-content: space-around;
+        cursor: pointer;
+
+        &:nth-child(2) {
+          padding: 0px
+       }
+
+      }
+
+      svg {
+        &:nth-child(1) {
+          width: 20px;
+          height: 20px;
+          margin-right: -10px
+       }
       }
     }
   }
@@ -97,6 +114,18 @@ export const Content = styled.div`
           width: 100px;
         }
       }
+    }
+  }
+
+  .share{
+    display: flex;
+    flex-direction: row;
+
+    svg{
+      width: 25px;
+      height: 150px;
+      margin-right: 40px;
+      cursor: pointer;
     }
   }
 `

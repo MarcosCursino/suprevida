@@ -9,7 +9,7 @@ export const Container = styled.div`
   background-color: #FFF;
   border: 1px solid rgba(15, 39, 118, 0.1);
   padding: 0 50px 0 50px;
-  color: #3C3C3C;
+  color: #2e2e2e;
 
   div {
     cursor: pointer;
