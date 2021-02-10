@@ -1,18 +1,18 @@
 import styled from 'styled-components';
 
 export const Nav = styled.nav`
-  height: 100px;
+  height: 130px;
   display: flex;
   justify-content: center;
   background-color: #fff;
   align-items: center;
   position: relative;
   /* background-color: #115; */
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     padding: 10px;
     height: 100px;
     align-items: baseline;
-  }
+  } */
   .logo {
     @media (max-width: 768px) {
       display: flex;
@@ -58,6 +58,7 @@ export const Nav = styled.nav`
       margin: 20px -30px 0 0;
       border: none;
       border-bottom: 2px solid #7A7A7A;
+      padding-bottom: 5px;
     }
     @media (max-width: 768px) {
       position: absolute;

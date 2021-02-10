@@ -1,4 +1,5 @@
 import * as S from './styles';
+import { MdAddShoppingCart } from "react-icons/md";
 
 export default function Index() {
 
@@ -14,7 +15,10 @@ export default function Index() {
         <div>Longevidade</div>
         <div>Família</div>
         <div>Negocios da Saúde</div>
-        <div>N</div>
+        <S.Store>
+          <MdAddShoppingCart />
+          <div>Nossa Loja</div>
+        </S.Store>
     </S.Container>
   )
 }
