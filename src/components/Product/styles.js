@@ -76,6 +76,7 @@ export const Mini = styled.div`
     object-fit: cover;
     border: 1px solid #e1e1e1;
     margin-bottom: 25px;
+    cursor: pointer;
   }
 `
 
@@ -107,6 +108,7 @@ export const BoxRigth = styled.div`
     outline: none;
     color: #FFF;
     font-size: 20px;
+    cursor: pointer;
   }
 
   .infoProduct{

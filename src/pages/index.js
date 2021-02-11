@@ -5,6 +5,7 @@ import Header from '../components/Header';
 import Menu from '../components/Menu';
 import Footer from '../components/Footer';
 import Product from '../components/Product';
+import Description from '../components/Description';
 
 function Index() {
   return(
@@ -12,6 +13,7 @@ function Index() {
       <Header />
       <Menu />
       <Product />
+      <Description />
       <Footer />
     </S.Container>
   )
