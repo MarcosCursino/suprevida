@@ -45,6 +45,7 @@ export const BoxLeft = styled.div`
   width: 700px;
   min-width: 700px;
   height: 580px;
+  margin-right: 20px;
 `
 export const Img = styled.div`
   margin-top: 35px;
@@ -56,6 +57,8 @@ export const Img = styled.div`
   background-color: #223;
 
   img{
+    max-width: 550px;
+    max-height: 420px;
     width: 550px;
     height: 420px;
     object-fit: cover;
