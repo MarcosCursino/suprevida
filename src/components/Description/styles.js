@@ -8,6 +8,11 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   padding: 0 100px 0 100px;
+
+  h3 {
+    font-size: 22px;
+    font-weight: 900;
+  }
   color: #006A6A;
 
   div {
