@@ -7,10 +7,10 @@ export const Container = styled.div`
 export const Breadcrumb = styled.div`
   display: flex;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 20px;
   font-size: 11px;
   color: rgb(0, 0, 0, 0.87);
-  margin-left: 30px;
+  margin-left: 56px;
 
   span {
     margin: 0 5px 0 5px;
