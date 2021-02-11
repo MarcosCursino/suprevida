@@ -10,6 +10,7 @@ export const Container = styled.div`
   border: 1px solid rgba(15, 39, 118, 0.1);
   padding: 0 100px 0 100px;
   color: #2e2e2e;
+  min-width: 1400px;
 
   div {
     cursor: pointer;

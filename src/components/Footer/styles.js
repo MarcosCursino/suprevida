@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   background: #006A6A;
   width: 100%;
+  min-width: 1600px;
   display: flex;
   justify-content: center;
 `
@@ -12,38 +13,10 @@ export const Content = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 280px ;
+  height: 250px ;
   width: 100%;
   padding: 0 20px 0 20px;
   max-width: 1000px;
-  @media (max-width: 768px) {
-    flex-direction: column;
-    height: 100%;
-    align-items: flex-start;
-    .localizacao {
-      h1 {
-        font-size: 26px;
-        &:after {
-          width: 70px;
-        }
-      }
-    }
-    .contato {
-      width: 100%;
-      display: flex;
-      margin-left: 0;
-    }
-    .patriocinio {
-      background-color: #FFF;
-      justify-content: space-around;
-      align-items: center;
-      width: 100%;
-
-      svg {
-        margin-right: 50px !important;
-      }
-    }
-  }
 
   .localizacao {
     display: flex;
