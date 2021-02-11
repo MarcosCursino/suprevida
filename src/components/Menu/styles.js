@@ -13,6 +13,7 @@ export const Container = styled.div`
   min-width: 1400px;
 
   div {
+    font-size: 14px;
     cursor: pointer;
     &:hover {
       color: #000;

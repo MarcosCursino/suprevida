@@ -8,22 +8,31 @@ export const Nav = styled.nav`
   background-color: #fff;
   align-items: center;
   position: relative;
+  justify-content: center;
 
   .flex {
-    margin-left: 150px;
     width: 100%;
+    min-width: 1525px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #FFF;
+
+    @media (max-width:1920px){
+      margin-left: 40px;
+      min-width: 800px;
+    }
+
   }
   .imgLogo {
     width: 166px;
     height: 92px;
     object-fit: cover;
+
+    /* margin-left: 100px; */
   }
   img {
-    margin-right: 60px;
+    margin-right: 95px;
     width: 25px;
     height: 25px;
   }
@@ -52,6 +61,11 @@ export const Nav = styled.nav`
       color: #7A7A7A;
       font-size: 18px;
       cursor: pointer;
+
+      &:hover {
+      color: #4B4B4B !important;
+      transition: all 0.5s;
+    }
     }
   }
 `
@@ -120,6 +134,7 @@ export const Itens = styled.div`
 
   div {
     cursor: pointer;
+    font-size: 14px;
     &:hover {
       color: #3C3C3C;
       transition: all 0.5s;
@@ -131,6 +146,7 @@ export const Separator = styled.div`
   margin: 0 10px 0 10px;
 `
 export const Location = styled.div`
+  font-size: 14px;
   margin-right: 150px;
 
   strong {
