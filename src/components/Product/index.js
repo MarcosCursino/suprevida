@@ -1,7 +1,7 @@
 import * as S from './styles';
-import { FaAngleRight } from "react-icons/fa";
-
+import { FaAngleRight, FaFacebook, FaInstagram, FaTwitter, FaWhatsapp, FaLinkedin, FaTelegram } from "react-icons/fa";
 export default function Index() {
+  const props = {width: 400, height: 300, zoomPosition: 'original', img: "https://fotos.suprevida.com.br/fotos/1545132967308-1580222776689.jpg"};
 
   return (
     <S.Container>
@@ -14,7 +14,14 @@ export default function Index() {
         <S.Product>
 
           <S.BoxLeft>
-          IMAGEM AQUI
+            <S.Mini>
+              <img src="https://fotos.suprevida.com.br/fotos/1545132967308-1580222776689.jpg"></img>
+              <img src="https://fotos.suprevida.com.br/fotos/1545132967308-1580222776689.jpg"></img>
+            </S.Mini>
+            <S.Img>
+              <img src="https://fotos.suprevida.com.br/fotos/biosoma-luva-1592914339801.jpg.jpg"></img>
+            </S.Img>
+
           </S.BoxLeft>
 
           <S.BoxRigth>
@@ -38,6 +45,19 @@ export default function Index() {
               <input type="text" placeholder="Digite o CEP"></input>
               <button>CALCULAR</button>
             </S.Freight>
+
+            <S.Share>
+                <span>COMPARTILHE ESSA OFERTA!</span>
+                <div>
+                  <FaFacebook size="22"/>
+                  <FaInstagram size="22"/>
+                  <FaTwitter size="22"/>
+                  <FaWhatsapp size="22"/>
+                  <FaLinkedin size="22"/>
+                  <FaTelegram size="22"/>
+                </div>
+            </S.Share>
+
           </S.BoxRigth>
 
         </S.Product>

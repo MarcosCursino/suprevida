@@ -40,11 +40,43 @@ export const Product = styled.div`
 `
 
 export const BoxLeft = styled.div`
-  background-color: #D3D3D3;
   display: flex;
   flex-direction: row;
-  width: 40%;
+  width: 700px;
+  min-width: 700px;
   height: 580px;
+`
+export const Img = styled.div`
+  margin-top: 35px;
+  margin-right: 15px;
+  margin-left: auto;
+  width: 550px;
+  min-width: 550px;
+  height: 420px;
+  background-color: #223;
+
+  img{
+    width: 550px;
+    height: 420px;
+    object-fit: cover;
+  }
+`
+export const Mini = styled.div`
+  padding-top: 38px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 150px;
+  min-width: 150px;
+
+  img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 1px solid #e1e1e1;
+    margin-bottom: 25px;
+  }
 `
 
 export const BoxRigth = styled.div`
@@ -158,7 +190,8 @@ export const Freight = styled.div`
   justify-content: space-between;
 
   span {
-    width: 30%;
+    width: 140px;
+    min-width:140px;
     font-size: 16px;
     color: rgb(0, 0, 0, 0.87);
   }
@@ -174,13 +207,48 @@ export const Freight = styled.div`
     text-align: center;
   }
 
+  input:focus{
+    outline: 0;
+   }
+
   button {
     width: 100px;
     height: 30px;
     background-color: #FFF;
     border: 1px solid #ccc;
-    opacity: .65;
     border-radius: 4px;
+    cursor: pointer;
   }
 
 `
+export const Share = styled.div`
+  width: 300px;
+  margin-top: 55px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #006A6A;
+  border-radius: 4px;
+  margin-left: 100px;
+  padding: 15px 15px 15px 8px;
+
+  span{
+    font-size: 12px;
+    color: rgb(0, 0, 0, 0.87);
+    font-weight: 700;
+  }
+
+  div {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #4B4B4B;
+    width: 60%;
+    cursor: pointer;
+
+  }
+`
+
