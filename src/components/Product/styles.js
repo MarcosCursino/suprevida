@@ -10,7 +10,7 @@ export const Breadcrumb = styled.div`
   margin-top: 20px;
   font-size: 11px;
   color: rgb(0, 0, 0, 0.87);
-  margin-left: 56px;
+  margin-left: 53px;
 
   span {
     margin: 0 5px 0 5px;
