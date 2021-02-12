@@ -33,11 +33,8 @@ export const Breadcrumb = styled.div`
 export const Product = styled.div`
   display: flex;
   margin-left: 35px;
-  /* align-items: center;
-  justify-content: center; */
   flex-direction: row;
   margin-top: 10px;
-  /* background-color: #226; */
 `
 
 export const BoxLeft = styled.div`
@@ -49,13 +46,14 @@ export const BoxLeft = styled.div`
   margin-right: 20px;
 `
 export const Img = styled.div`
-  margin-top: 35px;
+  margin-top: 25px;
   margin-right: 15px;
   margin-left: auto;
   width: 550px;
   min-width: 550px;
   height: 420px;
   background-color: #223;
+  position: relative;
 
   img{
     max-width: 550px;
@@ -257,5 +255,27 @@ export const Share = styled.div`
     cursor: pointer;
 
   }
+`
+
+export const Flag = styled.div`
+
+  strong {
+      z-index: 99999;
+      position: absolute;
+      top: 16px;
+      right: 5px;
+      color: #FFF;
+      text-align: center;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-left: 0;
+      border-top: 105px solid #F8475F;
+      border-left: 105px solid transparent;
+      border-bottom: 105px solid transparent;
+    }
 `
 

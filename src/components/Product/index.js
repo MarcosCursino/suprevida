@@ -18,12 +18,13 @@ export default function Index() {
 
           <S.BoxLeft>
             <S.Mini>
-              <img src="https://fotos.suprevida.com.br/fotos/1545132967308-1580222776689.jpg" onClick={() => setImg('https://fotos.suprevida.com.br/fotos/1545132967308-1580222776689.jpg')}></img>
-              <img src="https://fotos.suprevida.com.br/fotos/biosoma-luva-1592914339801.jpg.jpg" onClick={() => setImg('https://fotos.suprevida.com.br/fotos/biosoma-luva-1592914339801.jpg.jpg')}></img>
+              <img src="https://fotos.suprevida.com.br/fotos/1545132967308-1580222776689.jpg" alt="Thubmanil" onClick={() => setImg('https://fotos.suprevida.com.br/fotos/1545132967308-1580222776689.jpg')}></img>
+              <img src="https://fotos.suprevida.com.br/fotos/biosoma-luva-1592914339801.jpg.jpg" alt="Thubmanil" onClick={() => setImg('https://fotos.suprevida.com.br/fotos/biosoma-luva-1592914339801.jpg.jpg')}></img>
 
             </S.Mini>
             <S.Img>
-              <img src={img}></img>
+              <img src={img} alt="Thubmanil" ></img>
+              <S.Flag ><strong>15% OFF</strong></S.Flag>
             </S.Img>
 
           </S.BoxLeft>
