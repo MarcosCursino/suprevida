@@ -10,12 +10,16 @@ import OtherProducts from '../components/OtherProducts';
 import NewsLetter from '../components/NewsLetter';
 
 function Index() {
-  return(
+  return (
 
     <S.Container>
+
       <Head>
-        <title>LUVAS PARA BANHO E LIMPEZA EM GERAL BIOSOMA - 25 UN - HARTMANN</title>
+        <title>
+          LUVAS PARA BANHO E LIMPEZA EM GERAL BIOSOMA - 25 UN - HARTMANN
+        </title>
       </Head>
+
       <Header />
       <Menu />
       <Product />
