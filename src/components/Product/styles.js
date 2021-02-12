@@ -64,7 +64,7 @@ export const Img = styled.div`
   }
 `
 export const Mini = styled.div`
-  padding-top: 38px;
+  padding-top: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
