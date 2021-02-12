@@ -31,7 +31,7 @@ export default function Index() {
             </div>
 
             <div className="contentUser">
-               <img src="img/user.svg" alt="Usuario" />
+              <img src="img/user.svg" alt="Usuario" />
               <span>Minha Conta</span>
             </div>
 

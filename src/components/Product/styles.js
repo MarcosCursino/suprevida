@@ -5,6 +5,7 @@ export const Container = styled.div`
 `;
 
 export const Breadcrumb = styled.div`
+  min-width: 800px;
   display: flex;
   align-items: center;
   margin-top: 20px;
@@ -84,10 +85,10 @@ export const Mini = styled.div`
 `
 
 export const BoxRigth = styled.div`
-  /* background-color: #223; */
   display: flex;
   flex-direction: column;
   width: 30%;
+  min-width: 520px; 
   height: 580px;
 
   h1 {

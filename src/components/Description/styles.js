@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  margin-top: 25px;
+  margin-top: -20px;
   min-width: 1400px;
   display: flex;
   flex-direction: column;
@@ -10,7 +10,7 @@ export const Container = styled.div`
   padding: 0 100px 0 100px;
 
   h3 {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 900;
   }
   color: #006A6A;

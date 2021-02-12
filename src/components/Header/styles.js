@@ -57,7 +57,7 @@ export const Nav = styled.nav`
     justify-content: center;
     align-items: center;
     span {
-      margin: 0px 30px 0px -55px;
+      margin: 0px 30px 0px -70px;
       color: #7A7A7A;
       font-size: 18px;
       cursor: pointer;
@@ -110,6 +110,11 @@ export const Notification = styled.div`
     margin-right: 5px;
     width: 25px;
     height: 25px;
+  }
+
+  div{
+    color: #646464;
+    margin: 0 15px 0 15px;
   }
 `
 export const Header = styled.div`
