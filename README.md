@@ -1,6 +1,6 @@
 ## 💻 Projeto
 
-Foi realizado uma single page utlizando Next JS para venda de produtos.
+Foi realizado uma single page de um e commerce utlizando Next JS.
 ## :rocket: Tecnologias
 
 Este projeto foi desenvolvido com as seguintes tecnologias:
