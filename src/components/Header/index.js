@@ -26,6 +26,10 @@ export default function Index() {
             <img className="imgLogo" src="img/logo.png" alt="Imagem Logo" />
 
             <div className="contentInput">
+              <select name="cars" id="cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+              </select>
               <input type="text" placeholder="O que está procurando?" />
               <img src="img/lupa.svg" alt="Lupa" />
             </div>
