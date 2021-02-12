@@ -7,6 +7,7 @@ import Footer from '../components/Footer';
 import Product from '../components/Product';
 import Description from '../components/Description';
 import OtherProducts from '../components/OtherProducts';
+import NewsLetter from '../components/NewsLetter';
 
 function Index() {
   return(
@@ -20,6 +21,7 @@ function Index() {
       <Product />
       <Description />
       <OtherProducts />
+      <NewsLetter />
       <Footer />
     </S.Container>
   )
