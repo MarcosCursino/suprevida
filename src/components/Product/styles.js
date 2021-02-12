@@ -104,7 +104,8 @@ export const BoxRigth = styled.div`
   .buttonBuyItem {
     margin-top: 40px;
     height: 44px;
-    width: calc(100% - 63px);
+    width: 340px;
+    /* width: calc(100% - 63px); */
     border: none;
     border-radius: 4px;
     background-color: #006A6A;
