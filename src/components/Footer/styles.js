@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const Container = styled.div`
   background: #006A6A;
   width: 100%;
-  min-width: 1600px;
   display: flex;
   justify-content: center;
 `
@@ -11,12 +10,39 @@ export const Container = styled.div`
 export const Content = styled.div`
   color: #FFF;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   height: 250px ;
   width: 100%;
   padding: 0 20px 0 20px;
-  max-width: 1000px;
+
+ @media (max-width: 768px) {
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+
+    .localizacao {
+      h1 {
+        text-align: center;
+        font-size: 22px;
+
+        &:after {
+          left: 73px !important;
+          width: 50px !important;
+        }
+      }
+    }
+
+    article {
+      text-align: center;
+      margin-top: 10px;
+
+      p {
+        font-size: 13px;
+      }
+    }
+ }
 
   .localizacao {
     display: flex;
@@ -40,10 +66,16 @@ export const Content = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+
     section {
       margin-top: 40px;
       display: flex;
       flex-direction: column;
+
+      @media (max-width: 768px) {
+        margin-top: 10px;
+      }
+
       button {
         border: none;
         border-radius: 5px;
@@ -64,6 +96,12 @@ export const Content = styled.div`
           padding: 0px
        }
 
+        @media (max-width: 768px) {
+          button {
+            height: 35px;
+            width: 200px;
+          }
+        }
       }
 
       svg {
@@ -71,7 +109,7 @@ export const Content = styled.div`
           width: 20px;
           height: 20px;
           margin-right: -10px
-       }
+       } 
       }
     }
   }
@@ -99,6 +137,18 @@ export const Content = styled.div`
       height: 150px;
       margin-right: 40px;
       cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      margin-top: -30px;
+      justify-content: space-around;
+      max-width: 220px;
+      width: 100%;
+
+      svg{
+        height: 100px;
+        margin-right: 0px;
+      }
     }
   }
 `
