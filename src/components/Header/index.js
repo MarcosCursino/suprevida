@@ -10,8 +10,12 @@ export default function Index() {
   const handleLocation = async () => {
     try {
       if (location.loaded) {
-        const response = await Axios.get(`http://api.positionstack.com/v1/reverse?access_key=f83c6c35f8960d799431f14a856be3ee&query=${location.coordinates.lat},${location.coordinates.lng}`);
-        setCity(response.data.data[0].locality)
+        const params = {
+          key: 'f80204822e4a4c668116158c2cc662ea',
+          q: `${location.coordinates.lat}+${location.coordinates.lng}`
+        }
+        const response = await Axios.get(`https://api.opencagedata.com/geocode/v1/json`, {params});
+        setCity(response.data.results[0].components.city)
       }
     } catch (err) {
       console.log(err)
