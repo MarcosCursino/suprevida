@@ -65,16 +65,17 @@ export default function Index() {
               <img src="img/lupa.svg" alt="Lupa" onClick={() => handleClick()}/>
             </div>
 
-            <div className="contentUser">
-              <img src="img/user.svg" alt="Usuario" />
-              <span>Minha Conta</span>
+            <div className="flexAccount">
+              <div className="contentUser">
+                <img src="img/user.svg" alt="Usuario" />
+                <span>Minha Conta</span>
+              </div> 
+
+              <S.Notification>
+                <img className="shopping" src="img/shopping.svg" alt="Carrinho de compras" />
+                <span>7</span>
+              </S.Notification>
             </div>
-
-            <S.Notification>
-              <img className="shopping" src="img/shopping.svg" alt="Carrinho de compras" />
-              <span>7</span>
-            </S.Notification>
-
           </div>
         </div>
       </S.Nav>
