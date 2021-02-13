@@ -26,7 +26,7 @@ function Index() {
       <Description />
       <OtherProducts />
       <NewsLetter />
-      <Footer /> 
+      <Footer />
     </S.Container>
   )
 }
