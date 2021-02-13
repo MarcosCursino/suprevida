@@ -10,7 +10,7 @@ export default function Index() {
   const handleLocation = async () => {
     try {
       if (location.loaded) {
-        const response = await Axios.get(`https://api.positionstack.com/v1/reverse?access_key=93aa4e1e09d5af9b69e0f9be902987f4&query=${location.coordinates.lat},${location.coordinates.lng}`);
+        const response = await Axios.get(`http://api.positionstack.com/v1/reverse?access_key=f83c6c35f8960d799431f14a856be3ee&query=${location.coordinates.lat},${location.coordinates.lng}`);
         setCity(response.data.data[0].locality)
       }
     } catch (err) {
