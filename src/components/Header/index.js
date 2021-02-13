@@ -1,6 +1,26 @@
+import React, { useState, useEffect } from 'react';
 import * as S from './styles';
+import useGeoLocation from '../../hooks/useGeoLocation';
+import Axios from 'axios';
 
 export default function Index() {
+  const location = useGeoLocation();
+  const [city, setCity] = useState('');
+
+  const handleLocation = async () => {
+    try {
+      if (location.loaded) {
+        const response = await Axios.get(`http://api.positionstack.com/v1/reverse?access_key=93aa4e1e09d5af9b69e0f9be902987f4&query=${location.coordinates.lat},${location.coordinates.lng}`);
+        setCity(response.data.data[0].locality)
+      }
+    } catch (err) {
+      console.log(err)
+    }
+  }
+
+  useEffect(() => {
+    handleLocation()
+  }, [location])
 
   return (
     <S.Container>
@@ -16,8 +36,9 @@ export default function Index() {
             <div>Vender Produtos</div>
           </S.Itens>
 
-          <S.Location>Você está em São Paulo. Clique <strong>Aqui</strong> para alterar.</S.Location>
-
+          {city !== '' ?
+          <S.Location>Você está em {city}. Clique <strong>Aqui</strong> para alterar.</S.Location> :
+          <S.Location>Não foi possível encontrar sua localização.</S.Location> }
       </S.Header>
 
       <S.Nav>
