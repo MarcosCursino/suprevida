@@ -50,6 +50,26 @@ export const Nav = styled.nav`
       padding-left: 8px;
       color: #4B4B4B;
     }
+
+    img {
+      cursor: pointer;
+    }
+
+    select {
+      width: 80px;
+      outline: none;
+      border: none;
+      background-color: #FFF;
+      margin-right: 5px;
+      color: #4B4B4B;
+      font-size: 16px;
+    }
+
+    option{
+      background-color: #FFF;
+      color: #4B4B4B;
+      font-size: 14px;
+    }
   }
   .contentUser {
     padding-top: 10px;

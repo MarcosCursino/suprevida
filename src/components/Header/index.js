@@ -57,7 +57,7 @@ export default function Index() {
             <img className="imgLogo" src="img/logo.png" alt="Imagem Logo" />
 
             <div className="contentInput">
-              <select name="cars" onChange={(e) => setOption(e.target.value)}>
+              <select name="options" onChange={(e) => setOption(e.target.value)}>
                 <option value="artigo">Artigo</option>
                 <option value="produto">Produto</option>
               </select>
