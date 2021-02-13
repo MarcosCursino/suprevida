@@ -6,6 +6,8 @@ import Axios from 'axios';
 export default function Index() {
   const location = useGeoLocation();
   const [city, setCity] = useState('');
+  const [search, setSearch] = useState('');
+  const [option, setOption] = useState('artigo');
 
   const handleLocation = async () => {
     try {
@@ -20,6 +22,10 @@ export default function Index() {
     } catch (err) {
       console.log(err)
     }
+  }
+
+  const handleClick = () => {
+    window.open(`https://suprevida.com.br/busca_Loja.html?type=${option}&q=${search}`, '_blank');
   }
 
   useEffect(() => {
@@ -51,12 +57,12 @@ export default function Index() {
             <img className="imgLogo" src="img/logo.png" alt="Imagem Logo" />
 
             <div className="contentInput">
-              <select name="cars" id="cars">
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
+              <select name="cars" onChange={(e) => setOption(e.target.value)}>
+                <option value="artigo">Artigo</option>
+                <option value="produto">Produto</option>
               </select>
-              <input type="text" placeholder="O que está procurando?" />
-              <img src="img/lupa.svg" alt="Lupa" />
+              <input type="text" placeholder="O que está procurando?" onChange={(e) => setSearch(e.target.value)}/>
+              <img src="img/lupa.svg" alt="Lupa" onClick={() => handleClick()}/>
             </div>
 
             <div className="contentUser">
