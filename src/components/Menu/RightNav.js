@@ -15,6 +15,7 @@ function RightNav({ open }) {
       <li>Longevidade</li>
       <li>Família</li>
       <li>Negocios da Saúde</li>
+      <li>Nossa Loja</li>
     </S.Ul>
   )
 }

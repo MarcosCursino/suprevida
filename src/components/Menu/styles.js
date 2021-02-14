@@ -66,7 +66,7 @@ export const StyledBurger = styled.div`
   position: fixed;
   top: 40px;
   right: 20px;
-  z-index: 20;
+  z-index: 999;
   display: none;
 
   @media (max-width: 960px) {
@@ -193,19 +193,16 @@ export const Ul = styled.ul`
     width: 200px;
     padding-top: 4.5rem;
     transition: transform 0.3s ease-in-out;
-    z-index: 9;
+    z-index: 99;
     justify-content: normal;
 
     li {
       text-align: center;
       margin-right: 20px;
-      color: #000;
+      color: #4B4B4B;
       cursor: pointer;
+      font-weight: 500;
 
-      &:hover {
-        color: #ED8E28;
-        transition: all 0.5s;
-      }
     }
 
     img {

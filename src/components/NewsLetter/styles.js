@@ -41,6 +41,7 @@ export const Container = styled.div`
   }
 
   input{
+    outline: none;
     width: 350px;
     height: 25px;
     margin: 0 15px 0 15px;

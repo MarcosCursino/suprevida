@@ -58,7 +58,7 @@ export default function Index() {
 
             <div className="contentInput">
               <select name="options" onChange={(e) => setOption(e.target.value)}>
-                <option value="artigo">Artigo</option>
+                <option value="artigo">Conteúdo</option>
                 <option value="produto">Produto</option>
               </select>
               <input type="text" placeholder="O que está procurando?" onChange={(e) => setSearch(e.target.value)}/>

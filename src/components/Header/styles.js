@@ -9,6 +9,15 @@ export const Nav = styled.nav`
   position: relative;
   justify-content: center;
 
+  @media (max-width: 700px) {
+    position: fixed;
+    top:0;
+    left: 0;
+    height: 160px !important;
+    z-index: 99;
+    border-bottom: 1px solid #E5E5E5;
+  }
+
   .flexAccount {
     display: flex;
     margin-right: 40px;
@@ -93,7 +102,7 @@ export const Nav = styled.nav`
     }
 
     select {
-      width: 80px;
+      width: 95px;
       outline: none;
       border: none;
       background-color: #FFF;
@@ -126,8 +135,9 @@ export const Nav = styled.nav`
       }
 
       select {
-        width: 60px;
+        width: 76px;
         font-size: 12px;
+
       }
 
       option{

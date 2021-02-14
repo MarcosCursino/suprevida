@@ -2,15 +2,20 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
-  min-width: 1600px;
+  width: 100%;
 
   h3 {
     color: #006A6A;
     font-size: 24px;
     font-weight: 900;
+
+    @media (max-width: 560px) {
+      font-size: 16px;
+      text-align: center;
+    }
   }
 
 `
@@ -19,6 +24,8 @@ export const Itens = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
 
 `
 
@@ -28,6 +35,18 @@ export const Item = styled.div`
   width: 194px;
   height: 346px;
   flex-direction: column;
+
+  @media (max-width: 1370px) {
+    margin: 0 20px;
+  }
+
+  @media (max-width: 560px) {
+    height: 290px;
+
+    img {
+      max-height: 150px;
+    }
+  }
 
   img {
     width: auto;
@@ -48,11 +67,22 @@ export const Item = styled.div`
     cursor: pointer;
     border: 1px solid #006A6A;
 
+    @media (max-width: 560px) {
+      width: 150px;
+      font-size: 12px;
+      margin-left: 20px;
+      height: 30px !important;
+    }
   }
+
   span {
     margin-top: 10px;
     color: #646464;
     font-size: 12px;
+
+    @media (max-width: 560px) {
+      text-align: center;
+    }
   }
 
   div {
@@ -61,6 +91,12 @@ export const Item = styled.div`
     line-height: 18px;
     color: #4B4B4B;
     font-weight: 800;
+
+    @media (max-width: 560px) {
+      font-size: 15px;
+      margin-top: 10px;
+      text-align: center;
+    }
   }
 
   strong {
