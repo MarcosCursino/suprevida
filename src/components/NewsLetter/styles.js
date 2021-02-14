@@ -4,12 +4,15 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  /* width: 100%; */
-  min-width: 1600px;
   height: 60px;
   border-top: 1px solid #e3e3e3;
   color: #646464;
   font-size: 16px;
+
+  @media (max-width: 1200px) {
+    flex-direction: column;
+    height: 100%;
+  }
 
   div {
     display: flex;
@@ -19,10 +22,21 @@ export const Container = styled.div`
     @media (max-width:1800px){
       margin-left: 40px;
     }
+
+    @media (max-width: 1200px) {
+      margin: 10px 0 20px 0;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
   }
 
   span{
-    min-width: 600px;
     margin: 0 15px 0 4px;
   }
 
@@ -35,6 +49,10 @@ export const Container = styled.div`
     border: 1px solid #ccc;
     font-size: 14px;
 
+    @media (max-width: 1200px) {
+      margin: 0 0 20px 0;
+      height: 30px;
+    }
   }
 
   button{
@@ -48,6 +66,10 @@ export const Container = styled.div`
     font-size: 14px;
     cursor: pointer;
     border: none;
+
+    @media (max-width: 1200px) {
+      margin-bottom: 20px;
+    }
   }
 
 `
