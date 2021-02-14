@@ -2,17 +2,18 @@ import { useState } from 'react';
 import * as S from './styles';
 import { FaAngleRight, FaFacebook, FaInstagram, FaTwitter, FaWhatsapp, FaLinkedin, FaTelegram } from "react-icons/fa";
 export default function Index() {
-  const props = {width: 400, height: 300, zoomPosition: 'original', img: "https://fotos.suprevida.com.br/fotos/1545132967308-1580222776689.jpg"};
+  const props = { width: 400, height: 300, zoomPosition: 'original', img: "https://fotos.suprevida.com.br/fotos/1545132967308-1580222776689.jpg" };
 
   const [img, setImg] = useState('https://fotos.suprevida.com.br/fotos/biosoma-luva-1592914339801.jpg.jpg');
 
   return (
-    <S.Container>
-        <S.Breadcrumb>
-         <span>INÍCIO</span> <FaAngleRight />
-         <span>PRODUTOS</span> <FaAngleRight />
-         <strong>LUVAS PARA BANHO E LIMPEZA EM GERAL  BIOSOMA - 25 UN - HARTMANN</strong>
-        </S.Breadcrumb>
+    <>
+      <S.Breadcrumb>
+        <span>INÍCIO</span> <FaAngleRight />
+        <span>PRODUTOS</span> <FaAngleRight />
+        <strong>LUVAS PARA BANHO E LIMPEZA EM GERAL  BIOSOMA - 25 UN - HARTMANN</strong>
+      </S.Breadcrumb>
+      <S.Container>
 
         <S.Product>
 
@@ -52,20 +53,21 @@ export default function Index() {
             </S.Freight>
 
             <S.Share>
-                <span>COMPARTILHE ESSA OFERTA!</span>
-                <div>
-                  <FaFacebook size="22"/>
-                  <FaInstagram size="22"/>
-                  <FaTwitter size="22"/>
-                  <FaWhatsapp size="22"/>
-                  <FaLinkedin size="22"/>
-                  <FaTelegram size="22"/>
-                </div>
+              <span>COMPARTILHE ESSA OFERTA!</span>
+              <div>
+                <FaFacebook size="22" />
+                <FaInstagram size="22" />
+                <FaTwitter size="22" />
+                <FaWhatsapp size="22" />
+                <FaLinkedin size="22" />
+                <FaTelegram size="22" />
+              </div>
             </S.Share>
 
           </S.BoxRigth>
 
         </S.Product>
-    </S.Container>
+      </S.Container>
+    </>
   )
 }
