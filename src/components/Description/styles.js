@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   margin-top: -20px;
-  min-width: 1400px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,20 +22,45 @@ export const Container = styled.div`
       width: 100%;
     }
   }
+
+  @media (max-width: 560px) {
+    padding: 0 20px 0 20px;
+
+    margin-top: -160px;
+    
+    h3 {
+      font-size: 16px;
+    }
+
+    h3:nth-child(4) {
+      margin-top: -30px;
+    }
+  }
 `
 
 export const Content = styled.div`
-  min-width: 1400px;
 
   p{
     color: #4B4B4B;
     font-size: 16px;
   }
+
+  @media (max-width: 560px) {
+    margin-top: -20px;
+  
+    p {
+      font-size: 13px;
+    }
+
+    h4 {
+      font-size: 15px;
+      margin-bottom: 0;
+    }
+  }
 `
 
 export const Information = styled.div`
   margin-right: auto;
-  min-width: 1400px;
 
   ul{
     margin-left: -20px;
@@ -47,8 +71,17 @@ export const Information = styled.div`
   li {
     line-height: 28px;
   }
+  
   strong {
     color: #646464;
+  }
+
+  @media (max-width: 560px) {
+    margin-top: -20px;
+
+    li {
+      font-size: 13px;
+    }
   }
 `
 
