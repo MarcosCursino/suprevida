@@ -1,6 +1,6 @@
 ## 💻 Projeto
 
-Neste desafio foi proposto realizar uma single page de um E-commerce utlizando Next JS. Também foi implementado um sistema de localização por IP, pegando a latitude e longitude do dispositivo e realizando uma busca externa para retornar a cidade atual.
+Neste desafio foi proposto realizar uma single page de um e-commerce utlizando Next JS. Também foi implementado um sistema de localização por IP, pegando a latitude e longitude do dispositivo e realizando uma busca externa para retornar a cidade atual.
 ## :rocket: Tecnologias
 
 Este projeto foi desenvolvido com as seguintes tecnologias:
