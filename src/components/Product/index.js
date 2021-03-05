@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import * as S from './styles';
 import { FaAngleRight, FaFacebook, FaInstagram, FaTwitter, FaWhatsapp, FaLinkedin, FaTelegram } from "react-icons/fa";
-export default function Index() {
-  const props = { width: 400, height: 300, zoomPosition: 'original', img: "https://fotos.suprevida.com.br/fotos/1545132967308-1580222776689.jpg" };
 
+import Image from 'next/image'
+
+export default function Index() {
+  
   const [img, setImg] = useState('https://fotos.suprevida.com.br/fotos/biosoma-luva-1592914339801.jpg.jpg');
 
   return (
@@ -19,12 +21,25 @@ export default function Index() {
 
           <S.BoxLeft>
             <S.Mini>
-              <img src="https://fotos.suprevida.com.br/fotos/1545132967308-1580222776689.jpg" alt="Thubmanil" onClick={() => setImg('https://fotos.suprevida.com.br/fotos/1545132967308-1580222776689.jpg')}></img>
-              <img src="https://fotos.suprevida.com.br/fotos/biosoma-luva-1592914339801.jpg.jpg" alt="Thubmanil" onClick={() => setImg('https://fotos.suprevida.com.br/fotos/biosoma-luva-1592914339801.jpg.jpg')}></img>
+              <Image 
+                src="https://fotos.suprevida.com.br/fotos/1545132967308-1580222776689.jpg" 
+                alt="Thubmanil" 
+                onClick={() => setImg('https://fotos.suprevida.com.br/fotos/1545132967308-1580222776689.jpg')}
+                width="100" 
+                height="100"
+              />
+             
+              <Image 
+                src="https://fotos.suprevida.com.br/fotos/biosoma-luva-1592914339801.jpg.jpg" 
+                alt="Thubmanil" 
+                onClick={() => setImg('https://fotos.suprevida.com.br/fotos/biosoma-luva-1592914339801.jpg.jpg')}
+                width="100" 
+                height="100"
+              />
 
             </S.Mini>
             <S.Img>
-              <img src={img} alt="Thubmanil" ></img>
+              <Image src={img} alt="Thubmanil" width="550" height="420"/>
               <S.Flag ><strong>15% OFF</strong></S.Flag>
             </S.Img>
 

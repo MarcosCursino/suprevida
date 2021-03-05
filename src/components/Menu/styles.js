@@ -142,6 +142,7 @@ export const Ul = styled.ul`
   height: 67px;
   margin-left: 20px;
   display: none;
+  
 
   img {
     display: none;
@@ -207,7 +208,7 @@ export const Ul = styled.ul`
 
     img {
       margin: -30px 40px 10px 20px;
-      width: 100px;
+      width: 120px;
       display: flex;
     }
   }

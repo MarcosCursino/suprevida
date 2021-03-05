@@ -3,6 +3,8 @@ import * as S from './styles';
 import useGeoLocation from '../../hooks/useGeoLocation';
 import Axios from 'axios';
 
+import Image from 'next/image'
+
 export default function Index() {
   const location = useGeoLocation();
   const [city, setCity] = useState('');
@@ -16,7 +18,7 @@ export default function Index() {
           key: 'f80204822e4a4c668116158c2cc662ea',
           q: `${location.coordinates.lat}+${location.coordinates.lng}`
         }
-        const response = await Axios.get(`https://api.opencagedata.com/geocode/v1/json`, {params});
+        const response = await Axios.get(`https://api.opencagedata.com/geocode/v1/json`, { params });
         setCity(response.data.results[0].components.city)
       }
     } catch (err) {
@@ -36,40 +38,42 @@ export default function Index() {
     <S.Container>
 
       <S.Header>
-          <S.Itens>
-            <div>Produtos para Saúde </div>
-            <S.Separator>|</S.Separator>
-            <div>Biblioteca de Saúde </div>
-            <S.Separator>|</S.Separator>
-            <div>Profissionais de Saúde </div>
-            <S.Separator>|</S.Separator>
-            <div>Vender Produtos</div>
-          </S.Itens>
+        <S.Itens>
+          <div>Produtos para Saúde </div>
+          <S.Separator>|</S.Separator>
+          <div>Biblioteca de Saúde </div>
+          <S.Separator>|</S.Separator>
+          <div>Profissionais de Saúde </div>
+          <S.Separator>|</S.Separator>
+          <div>Vender Produtos</div>
+        </S.Itens>
 
-          {city !== '' ?
+        {city !== '' ?
           <S.Location>Você está em {city}. Clique <strong>Aqui</strong> para alterar.</S.Location> :
-          <S.Location>Não foi possível encontrar sua localização.</S.Location> }
+          <S.Location>Não foi possível encontrar sua localização.</S.Location>}
       </S.Header>
 
       <S.Nav>
         <div className="logo">
           <div className="flex">
-            <img className="imgLogo" src="img/logo.png" alt="Imagem Logo" />
+            <div className="imgLogo">
+              <Image src="/img/logo.webp" width={166} height={92} alt="Imagem Logo" />
+            </div>
 
             <div className="contentInput">
               <select name="options" onChange={(e) => setOption(e.target.value)}>
                 <option value="artigo">Conteúdo</option>
                 <option value="produto">Produto</option>
               </select>
-              <input type="text" placeholder="O que está procurando?" onChange={(e) => setSearch(e.target.value)}/>
-              <img src="img/lupa.svg" alt="Lupa" onClick={() => handleClick()}/>
+              <input type="text" placeholder="O que está procurando?" onChange={(e) => setSearch(e.target.value)} />
+              <img src="img/lupa.svg" alt="Lupa" onClick={() => handleClick()} />
             </div>
 
             <div className="flexAccount">
               <div className="contentUser">
                 <img src="img/user.svg" alt="Usuario" />
                 <span>Minha Conta</span>
-              </div> 
+              </div>
 
               <S.Notification>
                 <img className="shopping" src="img/shopping.svg" alt="Carrinho de compras" />

@@ -48,26 +48,32 @@ export const Nav = styled.nav`
       margin-left: 40px;
     }
   }
-  .imgLogo {
-    width: 166px;
-    height: 92px;
-    object-fit: cover;
+
+  .imgLogo{
+    margin-right: 95px;
+  }
+  .imgLogo img{
+      width: 166px;
+      height: 92px;
+      object-fit: cover;
+      margin-right: 95px;
   }
 
   @media (max-width: 700px) {
-    .imgLogo {
+    .imgLogo img{
       width: 120px;
       height: 68px;
       object-fit: cover;
-    }
+      }
+    
   }
 
   @media (max-width: 480px) {
-    .imgLogo {
+    .imgLogo img {
       width: 100px;
       height: 58px;
       object-fit: cover;
-    }
+      }
   }
   
   img {
